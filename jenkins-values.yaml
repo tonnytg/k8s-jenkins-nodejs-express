@@ -1,0 +1,19 @@
+replicaCount: 1
+
+jenkins:
+  name: jenkins
+  group: pipeline
+  container:
+    image: jenkins/jenkins:lts-jdk11
+    port: 8080
+  service:
+    type: NodePort
+    port: 8080
+  volume:
+    name: jenkins-storage
+    kind: PersistentVolumeClaim
+    mountPath: /data/jenkins-volume/
+    pvc:
+      name: jenkins-persistent-volume-claim
+      accessMode: ReadWriteOnce
+      storage: 4Gi
