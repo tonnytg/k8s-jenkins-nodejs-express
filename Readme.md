@@ -2,7 +2,7 @@
 
 ! If you running minikube for K8S cluster, I recommend use virtualbox driver, maybe by default you are using docker.
 Try something like this, this will help you more easy work with network service:
-> $minikube start --vm-drive virtualbox
+> $minikube start --vm-driver virtualbox
 
 ## First steps
 
