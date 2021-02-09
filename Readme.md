@@ -88,7 +88,7 @@ Now send this config-jenkins to POD
 
 
 Nice!
-Now your jenkin ready to use kubectl
+Now your Jenkins ready to use kubectl
 
 ## Configure your jenkins web console
 
