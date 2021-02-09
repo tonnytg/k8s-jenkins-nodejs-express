@@ -123,7 +123,7 @@ The password return like this:
 
 Example of jobs working:
 
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="1000" height="500">
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="9000" height="250">
 
 
 
