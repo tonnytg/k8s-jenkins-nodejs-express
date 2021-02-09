@@ -72,11 +72,11 @@ Now we need config file, but you need edit a PATH of files, create a copy of you
 
 In your machine, copy file
 > cp ~/.kube/config ~/.kube/config-jenkins
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20user.png" width="500" height="500">
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20user.png" width="600" height="600">
 
 Edit file
 > vim ~/.kube/config-jenkins
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20jenkins.png" width="100" height="100">
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20jenkins.png" width="600" height="600">
 
 Edit PATH of lines ca.crt, client.key and client.crt to /var/jenkins_home/
 Now send this config-jenkins to POD
@@ -112,7 +112,7 @@ The password return like this:
 1. Login
 2. Create a **pipeline** with name `build app k8s`
 3. Go to Pipeline and paste k8s/jenkinsfile content, like this image:
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkinsfile.png" width="100" height="100">
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkinsfile.png" width="1000" height="50">
 
 4. Save
 5. Build yout test
