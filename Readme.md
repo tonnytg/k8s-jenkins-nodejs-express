@@ -47,6 +47,7 @@ kubectl exec -n jenkins -it $(kubectl get pods -n jenkins | tail -n1 | tr -s " "
 ```
 Go to home of jenkins and create a folder for kubectl config
 > cd /var/jenkins_home
+
 > mkdir .kube
 
 Inside jenkins home, download kubect
