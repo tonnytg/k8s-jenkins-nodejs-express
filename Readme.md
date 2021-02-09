@@ -106,7 +106,7 @@ kubectl exec -n jenkins -it $(kubectl get pods -n jenkins | tail -n1 | tr -s " "
 
 
 
-## Configure your jenkins web console
+## Access your Jenkins Web Console
 
 To access, follow next command to get URL and PORT:
 ```
