@@ -67,7 +67,7 @@ At this momento your kubectl don't work, because you need key of k8s cluster.
 
 > kubectl cp ~/.minikube/profiles/minikube/client.crt jenkins/jenkins-0:/var/jenkins_home/.kube/
 
-Exist jenkins pod and back your machine.
+Exit jenkins pod and back your machine.
 
 Now we need config file, but you need edit a PATH of files, create a copy of your config, edit and after send to jenkins.
 
