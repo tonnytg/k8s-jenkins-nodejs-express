@@ -157,6 +157,10 @@ Example of jobs working:
 <img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/master_jobs.png" width="400" height="400">
 
 #### Build with Node Container on Kubernetes
+This process it use kubernetes plugin on jenkins to build a POD and execute pipeline
+https://plugins.jenkins.io/kubernetes/
+
+
 
 
 ## Example aplication
