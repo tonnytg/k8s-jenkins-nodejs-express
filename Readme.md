@@ -61,6 +61,8 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 At this momento your kubectl don't work, because you need key of k8s cluster.
 <br/>
 
+#### Config and CA Jenkins
+Exit jenkins pod and back your machine.
 
 > kubectl cp ~/.minikube/ca.crt jenkins/jenkins-0:/var/jenkins_home/.kube/
 
