@@ -10,7 +10,7 @@
 ### Config Minikube
 
 First you need to install and configure `minikube`
-> minikube start --cpus 4 --memory 8048 --addons=ingress --vm=true
+> minikube start --cpus 4 --memory 8048 --disk-size=20g --addons=ingress --vm=true
 <br/>
   
 
