@@ -96,7 +96,8 @@ Now send this config-jenkins to POD
 
 Nice!
 Now your Jenkins ready to use kubectl
-If you wana check:
+
+If you wanna check:
 ```
 kubectl exec -n jenkins -it $(kubectl get pods -n jenkins | tail -n1 | tr -s " " | cut -d" " -f1) -- bash
 ```
