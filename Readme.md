@@ -72,7 +72,7 @@ Now we need config file, but you need edit a PATH of files, create a copy of you
 
 In your machine, copy file
 > cp ~/.kube/config ~/.kube/config-jenkins
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20user.png" width="100" height="100">
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20user.png" width="500" height="500">
 
 Edit file
 > vim ~/.kube/config-jenkins
