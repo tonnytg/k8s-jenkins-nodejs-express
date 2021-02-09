@@ -76,6 +76,7 @@ In your machine, copy file
 
 Edit file
 > vim ~/.kube/config-jenkins
+
 <img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20jenkins.png" width="600" height="600">
 
 Edit PATH of lines ca.crt, client.key and client.crt to /var/jenkins_home/
@@ -104,7 +105,8 @@ Password: To get password run this command.
 kubectl exec --namespace jenkins -it svc/jenkins -c jenkins -- /bin/cat /run/secrets/chart-admin-password && echo
 ```
 The password return like this:
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkins%20password.png" width="100" height="100">
+
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkins%20password.png" width="1000" height="200">
 
 
 ## Configure your jenkins
@@ -112,13 +114,15 @@ The password return like this:
 1. Login
 2. Create a **pipeline** with name `build app k8s`
 3. Go to Pipeline and paste k8s/jenkinsfile content, like this image:
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkinsfile.png" width="1000" height="50">
+
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkinsfile.png" width="500" height="500">
 
 4. Save
 5. Build yout test
 
 Example of jobs working:
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="100" height="100">
+
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="500" height="500">
 
 
 
@@ -128,5 +132,5 @@ Example of jobs working:
 1. First yout need deploy your database to listen 27017
 2. After deploy your app in Nodejs to get some data on mongodb-service
 
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/check%20deploy%20dev_prod.png" width="100" height="100">
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/check%20deploy%20dev_prod.png" width="500" height="500">
 
