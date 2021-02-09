@@ -66,7 +66,7 @@ Exit jenkins pod and back your machine.
 ### Config and CA Jenkins
 <br/>
 
-Exit jenkins pod and back your machine.
+
 
 > kubectl cp ~/.minikube/ca.crt jenkins/jenkins-0:/var/jenkins_home/.kube/
 
