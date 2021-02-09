@@ -132,7 +132,7 @@ The password return like this:
 1. Login
 2. Create New Item
 3. Create a **pipeline** with name `build app k8s`
-4. Go to Pipeline and paste k8s/jenkinsfile content, like this image:
+4. Go to Pipeline and paste [k8s/jenkinsfile content](https://raw.githubusercontent.com/tonnytg/k8s-jenkins-nodejs-express/master/k8s/jenkinsfile), like this image:
 
 <img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkinsfile.png" width="1000" height="400">
 
