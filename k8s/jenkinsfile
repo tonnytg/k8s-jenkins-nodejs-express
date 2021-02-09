@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+
+    stages {
+        
+        stage('Build database DEV') {
+            steps {
+                sh '/var/jenkins_home/kubectl create -n dev -f https://raw.githubusercontent.com/tonnytg/k8s-jenkins-nodejs-express/master/k8s/database.yml'
+            }
+        }        
+        
+        stage('Build app DEV') {
+            steps {
+                sh '/var/jenkins_home/kubectl create -n dev -f https://raw.githubusercontent.com/tonnytg/k8s-jenkins-nodejs-express/master/k8s/app.yml'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sleep 5
+                echo '/var/jenkins_home/kubectl get pods --selector=app=message -n dev'
+            }
+        }
+
+        stage('Approve') {
+            steps {
+                input 'Deploying into PROD?'
+            }
+        }
+
+        stage('Build DEV') {
+            steps {
+                sh '/var/jenkins_home/kubectl create -n prod -f https://raw.githubusercontent.com/tonnytg/k8s-jenkins-nodejs-express/master/k8s/database.yml'
+            }
+        }   
+
+        stage('Build PROD') {
+            steps {
+                sh '/var/jenkins_home/kubectl create -n prod -f https://raw.githubusercontent.com/tonnytg/k8s-jenkins-nodejs-express/master/k8s/app.yml'
+            }
+        }      
+        
+    }
+}

@@ -1,18 +1,16 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "App random md5 message",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
-  "keywords": [
-    "app-node-message"
-  ],
-  "author": "Antonio Thomacelli Gomes",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {}
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
+    "require-dir": "^1.2.0"
+  }
 }
