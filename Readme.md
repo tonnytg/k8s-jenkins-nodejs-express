@@ -2,7 +2,7 @@
 
 ! If you running minikube for K8S cluster, I recommend use virtualbox driver, maybe by default you are using docker.
 Try something like this, this will help you more easy work with network service:
-> $minikube start --vm-driver docker
+> $minikube start --cpus 4 --memory 8048 --addons=ingress --vm=true
 
 I used virtualbox, but dns kube-dns don't work as well, my applications don't connect each other, and then I change to docker than virtualbox.
 
