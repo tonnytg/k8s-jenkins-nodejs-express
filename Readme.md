@@ -116,7 +116,7 @@ The password return like this:
 2. Create a **pipeline** with name `build app k8s`
 3. Go to Pipeline and paste k8s/jenkinsfile content, like this image:
 
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkinsfile.png" width="1000" height="600">
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkinsfile.png" width="1000" height="850">
 
 4. Save
 5. Build yout test
