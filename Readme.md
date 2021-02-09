@@ -72,6 +72,7 @@ Now we need config file, but you need edit a PATH of files, create a copy of you
 
 In your machine, copy file
 > cp ~/.kube/config ~/.kube/config-jenkins
+![config user](https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20user.png)
 
 Edit file
 > vim ~/.kube/config-jenkins
@@ -80,6 +81,8 @@ Edit PATH of lines ca.crt, client.key and client.crt to /var/jenkins_home/
 Now send this config-jenkins to POD
 
 > kubectl cp ~/.kube/config-jenkins jenkins/jenkins-0:/var/jenkins_home/.kube/config
+
+
 
 Nice!
 Now your jenkin ready to use kubectl
