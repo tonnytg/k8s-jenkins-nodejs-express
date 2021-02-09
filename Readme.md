@@ -129,7 +129,25 @@ The password return like this:
 
 ## Configure your jenkins
 
-1. Login
+
+### Configure your Node executor or Master jenkins (Choose what you like)
+
+#### Build with Master (more faster)
+1. Go to >> Manager Jenkins >> Manage Nodes and Cloud >> Configure Clouds
+2. Remove cloud `kubernetes`
+
+##### Configure Master to recive jobs (first way)
+1. Go to >> Manager Jenkins >> Manage Nodes and Cloud
+2. Click configure on `master` 
+3. Change `# of executors: 0` to 5 or more
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/master_jobs.png" width="400" height="400">
+
+#### Build with Node Container on Kubernetes (second way)
+This process it use kubernetes plugin on jenkins to build a POD and execute pipeline
+https://plugins.jenkins.io/kubernetes/
+
+
+#### Build your job to run on executor
 2. Create New Item
 3. Create a **pipeline** with name `build app k8s`
 4. Go to Pipeline and paste [k8s/jenkinsfile content](https://raw.githubusercontent.com/tonnytg/k8s-jenkins-nodejs-express/master/k8s/jenkinsfile), like this image:
@@ -142,25 +160,6 @@ The password return like this:
 Example of jobs working:
 
 <img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="1000" height="500">
-
-
-## Configure your Node or Master jenkins (Choose what you like)
-
-#### Build with Master
-1. Go to >> Manager Jenkins >> Manage Nodes and Cloud >> Configure Clouds
-2. Remove cloud `kubernetes`
-
-##### Configure Master to recive jobs
-1. Go to >> Manager Jenkins >> Manage Nodes and Cloud
-2. Click configure on `master` 
-3. Change `# of executors: 0` to 5 or more
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/master_jobs.png" width="400" height="400">
-
-#### Build with Node Container on Kubernetes
-This process it use kubernetes plugin on jenkins to build a POD and execute pipeline
-https://plugins.jenkins.io/kubernetes/
-
-
 
 
 ## Example aplication
