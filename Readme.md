@@ -113,13 +113,14 @@ The password return like this:
 ## Configure your jenkins
 
 1. Login
-2. Create a **pipeline** with name `build app k8s`
-3. Go to Pipeline and paste k8s/jenkinsfile content, like this image:
+2. Create New Item
+3. Create a **pipeline** with name `build app k8s`
+4. Go to Pipeline and paste k8s/jenkinsfile content, like this image:
 
 <img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkinsfile.png" width="1000" height="400">
 
-4. Save
-5. Build yout test
+5. Save
+6. Build yout test
 
 Example of jobs working:
 
