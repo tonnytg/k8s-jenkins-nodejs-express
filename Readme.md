@@ -122,7 +122,7 @@ The password return like this:
 
 Example of jobs working:
 
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="700" height="500">
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="1000" height="500">
 
 
 
@@ -132,5 +132,5 @@ Example of jobs working:
 1. First yout need deploy your database to listen 27017
 2. After deploy your app in Nodejs to get some data on mongodb-service
 
-<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/check%20deploy%20dev_prod.png" width="900" height="300">
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/check%20deploy%20dev_prod.png" width="1000" height="300">
 
