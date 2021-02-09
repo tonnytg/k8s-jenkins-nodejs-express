@@ -59,9 +59,13 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 > chmod +x kubectl
 
 At this momento your kubectl don't work, because you need key of k8s cluster.
+Exit jenkins pod and back your machine.
+<br/>
 <br/>
 
-#### Config and CA Jenkins
+### Config and CA Jenkins
+<br/>
+
 Exit jenkins pod and back your machine.
 
 > kubectl cp ~/.minikube/ca.crt jenkins/jenkins-0:/var/jenkins_home/.kube/
@@ -70,7 +74,7 @@ Exit jenkins pod and back your machine.
 
 > kubectl cp ~/.minikube/profiles/minikube/client.crt jenkins/jenkins-0:/var/jenkins_home/.kube/
 
-Exit jenkins pod and back your machine.
+
 
 Now we need config file, but you need edit a PATH of files, create a copy of your config, edit and after send to jenkins.
 
