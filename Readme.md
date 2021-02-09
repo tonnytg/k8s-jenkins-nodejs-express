@@ -26,6 +26,7 @@ Create namespace for Jenkins
 
 Go to k8s folder inside this project
 > cd k8s
+
 > helm install jenkins -n jenkins -f jenkins-values.yaml jenkinsci/jenkins
 
 With this you have now a Jenkins inside a namespace jenkins to build your pipeline
