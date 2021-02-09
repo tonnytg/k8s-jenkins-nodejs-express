@@ -72,10 +72,11 @@ Now we need config file, but you need edit a PATH of files, create a copy of you
 
 In your machine, copy file
 > cp ~/.kube/config ~/.kube/config-jenkins
-![config user](https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20user.png)
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20user.png" width="100" height="100">
 
 Edit file
 > vim ~/.kube/config-jenkins
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/config%20jenkins.png" width="100" height="100">
 
 Edit PATH of lines ca.crt, client.key and client.crt to /var/jenkins_home/
 Now send this config-jenkins to POD
@@ -89,7 +90,7 @@ Now your jenkin ready to use kubectl
 
 ## Configure your jenkins web console
 
-To access, follow next command:
+To access, follow next command to get URL and PORT:
 ```
 echo "http://`minikube ip`:`kubectl get all -n jenkins | grep jenkins-service | tr -s " " | cut -d" " -f5 | cut -d":" -f2 | cut -d"/" -f1`"
 ```
@@ -102,18 +103,30 @@ Password: To get password run this command.
 ```
 kubectl exec --namespace jenkins -it svc/jenkins -c jenkins -- /bin/cat /run/secrets/chart-admin-password && echo
 ```
+The password return like this:
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkins%20password.png" width="100" height="100">
 
 
 ## Configure your jenkins
 
 1. Login
 2. Create a **pipeline** with name `build app k8s`
-3. Go to Pipeline and paste k8s/jenkinsfile content
+3. Go to Pipeline and paste k8s/jenkinsfile content, like this image:
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/jenkinsfile.png" width="100" height="100">
+
 4. Save
 5. Build yout test
+
+Example of jobs working:
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="100" height="100">
+
+
 
 
 ## Example aplication
 
 1. First yout need deploy your database to listen 27017
 2. After deploy your app in Nodejs to get some data on mongodb-service
+
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/check%20deploy%20dev_prod.png" width="100" height="100">
+
