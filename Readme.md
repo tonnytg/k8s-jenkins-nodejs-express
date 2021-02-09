@@ -117,7 +117,8 @@ Access this link on your browser.
 
 #### To login:
 User: admin
-Password: To get password run this command.
+
+Password: <To get password run this command bellow.>
 ```
 kubectl exec --namespace jenkins -it svc/jenkins -c jenkins -- /bin/cat /run/secrets/chart-admin-password && echo
 ```
