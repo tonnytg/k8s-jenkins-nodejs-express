@@ -144,6 +144,19 @@ Example of jobs working:
 <img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="1000" height="500">
 
 
+## Configure your Node or Master jenkins (Choose what you like)
+
+#### Build with Master
+1. Go to >> Manager Jenkins >> Manage Nodes and Cloud >> Configure Clouds
+2. Remove cloud `kubernetes`
+
+##### Configure Master to recive jobs
+1. Go to >> Manager Jenkins >> Manage Nodes and Cloud
+2. Click configure on `master` 
+3. Change `# of executors: 0` to 5 or more
+<img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/master_jobs.png" width="400" height="400">
+
+#### Build with Node Container on Kubernetes
 
 
 ## Example aplication
