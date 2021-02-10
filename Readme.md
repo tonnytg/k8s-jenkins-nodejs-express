@@ -28,7 +28,7 @@ Create another two namespaces to your pipeline; without these namespaces, your p
 
 > kubectl create namespace dev
 
-kubectl create namespace prod
+> kubectl create namespace prod
 
 Go to k8s folder inside this project
 > cd k8s
