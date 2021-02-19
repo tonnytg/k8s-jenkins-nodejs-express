@@ -19,19 +19,12 @@ First you need to install and configure `minikube`
 
 #### Create a Jenkins
 
-  
-Create namespace for Jenkins
-
-> kubectl create namespace jenkins
-
-Create another two namespaces to your pipeline; without these namespaces, your pipeline will be broken
-
-> kubectl create namespace dev
-
-> kubectl create namespace prod
-
 Go to k8s folder inside this project
 > cd k8s
+  
+Create namespace for Jenkins, Prod and Dev
+
+> kubectl create -f k8s/namespaces.yml
 
 > helm install jenkins -n jenkins -f jenkins-values.yaml jenkinsci/jenkins
 
