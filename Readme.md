@@ -24,7 +24,7 @@ Go to k8s folder inside this project
   
 Create namespace for Jenkins, Prod and Dev
 
-> kubectl create -f k8s/namespaces.yml
+> kubectl create -f namespaces.yml
 
 > helm install jenkins -n jenkins -f jenkins-values.yaml jenkinsci/jenkins
 
