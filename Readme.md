@@ -161,7 +161,7 @@ Example of jobs working:
 <img src="https://github.com/tonnytg/k8s-jenkins-nodejs-express/blob/master/screenshots/build%20pipeline.png" width="1000" height="500">
 
 
-## Example aplication
+## Example application
 
 1. First yout need deploy your database to listen 27017
 2. After deploy your app in Nodejs to get some data on mongodb-service
